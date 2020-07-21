@@ -10,5 +10,6 @@ namespace CS321_W5D2_BlogAPI.Core.Models
         public string LastName { get; set; }
         // TODO: add a FullName property that returns FirstName + LastName
         public ICollection<Blog> Blogs { get; set; }
+        public string FullName { get {return FirstName + LastName;}}
     }
 }
